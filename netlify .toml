@@ -1,0 +1,12 @@
+[build]
+  # Tentukan folder yang berisi file build Anda, misalnya 'public' atau 'dist'
+  publish = "public"  # Ganti dengan folder tempat file yang akan di-deploy (misalnya 'dist' atau lainnya)
+  # Tentukan lokasi fungsi serverless
+  functions = "netlify/functions"
+
+[[redirects]]
+  # Aturan redirect untuk menangani rute tertentu
+  from = "/old-page"
+  to = "/new-page"
+  status = 301
+  force = true
