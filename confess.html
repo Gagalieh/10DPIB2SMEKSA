@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Confess - Kelas 10</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link ke file CSS Anda -->
+</head>
+<body>
+    <header>
+        <h1>Confess Kelas 10</h1>
+        <p>Tulis pesan Anda dengan jujur di sini, kami akan membacanya!</p>
+    </header>
+
+    <main>
+        <form id="confessForm" action="/.netlify/functions/confess" method="POST">
+            <label for="message">Tulis Pesan Anda:</label>
+            <textarea name="message" id="message" placeholder="Tulis pesan Anda di sini..." required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kelas 10 Desain Permodelan dan Informasi Bangunan - SMK Negeri 1 Kota Kediri</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Link ke file JavaScript Anda -->
+</body>
+</html>
