@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Kelas 10 Desain Permodelan dan Informasi Bangunan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Halaman Utama -->
+    <header>
+        <h1>Selamat datang di Website Kelas 10 Desain Permodelan dan Informasi Bangunan</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#galeri">Galeri</a></li>
+                <li><a href="#confess">Confess</a></li>
+                <li><a href="#profil">Profil Kelas</a></li>
+                <li><a href="#berita">Berita</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Halaman Beranda -->
+    <section id="home">
+        <h2>Selamat datang di Website Kelas Kami</h2>
+        <p>Ini adalah tempat untuk mengabadikan momen-momen indah bersama teman-teman di kelas 10 Desain Permodelan dan Informasi Bangunan SMK Negeri 1 Kota Kediri.</p>
+    </section>
+
+    <!-- Galeri -->
+    <section id="galeri">
+        <h2>Galeri Kelas</h2>
+        <div class="gallery">
+            <!-- Gambar akan ditambahkan disini -->
+            <img src="gambar1.jpg" alt="Momen 1" />
+            <img src="gambar2.jpg" alt="Momen 2" />
+            <img src="gambar3.jpg" alt="Momen 3" />
+        </div>
+    </section>
+
+    <!-- Confess (Kirim Pesan) -->
+    <section id="confess">
+        <h2>Confess / Kirim Pesan</h2>
+        <form action="#" method="POST">
+            <label for="pengirim">Nama Pengirim:</label>
+            <input type="text" id="pengirim" name="pengirim" required><br>
+
+            <label for="tujuan">Tujuan Pesan:</label>
+            <input type="text" id="tujuan" name="tujuan" required><br>
+
+            <label for="isi">Isi Pesan:</label>
+            <textarea id="isi" name="isi" rows="4" required></textarea><br>
+
+            <button type="submit">Kirim Pesan</button>
+        </form>
+        <h3>Pesan yang sudah dikirim:</h3>
+        <div id="pesanDisplay">
+            <!-- Pesan akan ditampilkan disini -->
+        </div>
+    </section>
+
+    <!-- Profil Kelas -->
+    <section id="profil">
+        <h2>Profil Kelas</h2>
+        <p>Kelas 10 Desain Permodelan dan Informasi Bangunan SMK Negeri 1 Kota Kediri merupakan tempat untuk belajar tentang perancangan bangunan dan informasi teknologi terkait. Kami belajar berbagai keterampilan yang sangat berguna di dunia industri konstruksi.</p>
+    </section>
+
+    <!-- Berita -->
+    <section id="berita">
+        <h2>Berita Terbaru</h2>
+        <article>
+            <h3>Event Kelas Terbaru</h3>
+            <p>Pada tanggal 1 Desember 2024, kami mengadakan lomba desain bangunan di sekolah. Semua siswa kelas 10 turut berpartisipasi dengan semangat tinggi.</p>
+        </article>
+        <article>
+            <h3>Pengumuman Jadwal Ujian</h3>
+            <p>Jadwal ujian semester untuk kelas 10 akan dimulai pada 15 Desember 2024. Pastikan kalian sudah siap dan mempersiapkan segala materi dengan baik.</p>
+        </article>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Kelas 10 Desain Permodelan dan Informasi Bangunan SMK Negeri 1 Kota Kediri. Semua hak dilindungi.</p>
+    </footer>
+</body>
+</html>
