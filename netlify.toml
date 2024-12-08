@@ -1,6 +1,0 @@
-[build]
-  functions = "functions" # Lokasi folder serverless functions
-  publish = "."           # Folder root tempat index.html berada
-
-[functions]
-  node_bundler = "esbuild" # Menggunakan esbuild untuk build serverless functions
