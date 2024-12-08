@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+l<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -8,38 +8,59 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
         <h1>Kelas 10 Desain Permodelan dan Informasi Bangunan</h1>
         <nav>
             <ul>
-                <li><a href="#gallery">Galeri</a></li>
-                <li><a href="#confess">Confess</a></li>
+                <li><a href="#gallery" class="toggle-btn" onclick="toggleSection('gallery')">Galeri</a></li>
+                <li><a href="#confess" class="toggle-btn" onclick="toggleSection('confess')">Confess</a></li>
                 <li><a href="#profile">Profil Kelas</a></li>
                 <li><a href="#news">Berita</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Profil Kelas -->
+    <section id="profile">
+        <h2>Profil Kelas</h2>
+        <p>Berikut adalah struktur kelas 10 Desain Permodelan dan Informasi Bangunan:</p>
+        <ul>
+            <li><strong>Ketua Kelas:</strong> Samuel Panji Truna Mahaja Surya Sata <a href="https://www.instagram.com/samuelpanji1" target="_blank">Instagram</a></li>
+            <li><strong>Wakil Ketua Kelas:</strong> Aulia Pandu Eka Putri <a href="https://www.instagram.com/aullpoetr" target="_blank">Instagram</a></li>
+            <li><strong>Wali Kelas:</strong> Netty Tri Wahyuni <a href="#">Instagram</a></li>
+        </ul>
+        <p><strong>Instagram Kelas:</strong> <a href="https://www.instagram.com/kela10dpi" target="_blank">Instagram Kelas</a></p>
+    </section>
+
+    <!-- Galeri Foto -->
     <section id="gallery">
-        <h2>Galeri</h2>
+        <h2>Galeri Foto <button class="toggle-btn" onclick="toggleSection('gallery')">Toggle</button></h2>
         <div class="gallery">
-            <div class="gallery-item">
-                <img src="images/foto1.jpg" alt="Deskripsi Foto 1">
+            <div class="album" id="album1">
+                <h3>Album 1</h3>
+                <div class="gallery-item">
+                    <img src="images/foto1.jpg" alt="Deskripsi Foto 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/foto2.jpg" alt="Deskripsi Foto 2">
+                </div>
             </div>
-            <div class="gallery-item">
-                <img src="images/foto2.jpg" alt="Deskripsi Foto 2">
-            </div>
-            <div class="gallery-item">
-                <img src="images/foto3.jpg" alt="Deskripsi Foto 3">
-            </div>
-            <div class="gallery-item">
-                <img src="images/foto4.jpg" alt="Deskripsi Foto 4">
+            <div class="album" id="album2">
+                <h3>Album 2</h3>
+                <div class="gallery-item">
+                    <img src="images/foto3.jpg" alt="Deskripsi Foto 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/foto4.jpg" alt="Deskripsi Foto 4">
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Formulir Confess -->
     <section id="confess">
-        <h2>Confess Kelas Kami</h2>
+        <h2>Confess Kelas Kami <button class="toggle-btn" onclick="toggleSection('confess')">Toggle</button></h2>
         <form id="confessForm">
             <label for="sender">Pengirim:</label>
             <input type="text" id="sender" name="sender" required>
@@ -57,18 +78,7 @@
         </div>
     </section>
 
-    <section id="profile">
-        <h2>Profil Kelas</h2>
-        <p>Berikut adalah struktur kelas 10 Desain Permodelan dan Informasi Bangunan:</p>
-        <ul>
-            <li><strong>Ketua Kelas:</strong> Budi Santoso <a href="https://www.instagram.com/budi.santoso">Instagram</a></li>
-            <li><strong>Wakil Ketua Kelas:</strong> Siti Aisyah <a href="https://www.twitter.com/siti_aisyah">Twitter</a></li>
-            <li><strong>Bendahara:</strong> Andi Pratama <a href="https://www.facebook.com/andi.pratama">Facebook</a></li>
-            <li><strong>Sekretaris:</strong> Lita Putri <a href="https://www.linkedin.com/in/lita-putri">LinkedIn</a></li>
-            <li><strong>Wali Kelas:</strong> Ibu Nanik Siti <a href="https://www.instagram.com/ibu.nanik">Instagram</a></li>
-        </ul>
-    </section>
-
+    <!-- Berita Kelas -->
     <section id="news">
         <h2>Berita Kelas</h2>
         <ul>
@@ -79,8 +89,13 @@
 
     <footer>
         <p>&copy; 2024 SMK Negeri 1 Kota Kediri. Semua hak dilindungi.</p>
+        <p>Website Kelas bagian dari <a href="https://smkn1kediri.sch.id/" target="_blank">SMK Negeri 1 Kediri</a></p>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Mengimpor Firebase Config -->
+    <script type="module" src="config.js"></script>
+    <!-- Mengimpor JavaScript utama untuk menangani logika Confess dan Fitur lainnya -->
+    <script type="module" src="script.js"></script>
+
 </body>
 </html>
